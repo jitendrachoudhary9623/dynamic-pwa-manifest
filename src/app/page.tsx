@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import AddToHomeScreen from '@/components/AddToHomeScreen';
 
 export default function Page() {
   return (
@@ -25,7 +24,6 @@ export default function Page() {
         </p>
         <Link href="/cache-on-demand">cache on demand</Link>
       </div>
-      <AddToHomeScreen />
     </main>
   );
 }
