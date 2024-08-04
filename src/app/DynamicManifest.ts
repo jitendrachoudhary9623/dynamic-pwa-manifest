@@ -12,9 +12,7 @@ export default function DynamicManifest() {
     const newStoreName = storeMatch ? storeMatch[1] : null;
     setStoreName(newStoreName);
 
-
     const linkElement = document.querySelector('link[rel="manifest"]');
-    alert('DynamicManifest.tsx: storeName: ' + newStoreName+" .."+linkElement);
 
     if (linkElement) {
       linkElement.setAttribute('href', newStoreName ? `/api/manifest/${newStoreName}` : '/api/manifest/default');

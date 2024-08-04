@@ -11,8 +11,11 @@ export async function GET(
   const manifest = {
     name: `${storeName} Store`,
     short_name: storeName,
+    id: `/store/${storeName}`,  // Unique ID for each store
     description: `Progressive Web App for ${storeName}`,
     start_url: `/store/${storeName}`,
+    "scope": `/store/${storeName}`,
+    homepage_url: `/store/${storeName}`,
     display: "standalone",
     background_color: "#ffffff",
     theme_color: "#000000",
